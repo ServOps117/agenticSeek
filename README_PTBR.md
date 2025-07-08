@@ -1,20 +1,20 @@
-# AgenticSeek: Alternativa Privada e Local ao Manus.
+# AI Stock Analyst: Alternativa Privada e Local ao Manus.
 
 <p align="center">
-<img align="center" src="./media/agentic_seek_logo.png" width="300" height="300" alt="Agentic Seek Logo">
+<img align="center" src="./media/ai-stock-analyst_logo.png" width="300" height="300" alt="AI Stock Analyst Logo">
 <p>
 
     English | [中文](./README_CHS.md) | [繁體中文](./README_CHT.md) | [Français](./README_FR.md) | [日本語](./README_JP.md) | [Português (Brasil)](./README_PTBR.md)
 
 *Uma **alternativa 100% local ao Manus AI**, este assistente de voz com IA navega autonomamente na web, escreve código e planeja tarefas mantendo todos os dados no seu dispositivo. Feito para modelos de raciocínio locais, roda inteiramente no seu hardware, garantindo total privacidade e zero dependência da nuvem.*
 
-[![Visite AgenticSeek](https://img.shields.io/static/v1?label=Website&message=AgenticSeek&color=blue&style=flat-square)](https://fosowl.github.io/agenticSeek.html) ![Licença](https://img.shields.io/badge/license-GPL--3.0-green) [![Discord](https://img.shields.io/badge/Discord-Join%20Us-7289DA?logo=discord&logoColor=white)](https://discord.gg/8hGDaME3TC) [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/fosowl.svg?style=social&label=Update%20%40Fosowl)](https://x.com/Martin993886460) [![GitHub stars](https://img.shields.io/github/stars/Fosowl/agenticSeek?style=social)](https://github.com/Fosowl/agenticSeek/stargazers)
+[![Visite AI Stock Analyst](https://img.shields.io/static/v1?label=Website&message=AI%20Stock%20Analyst&color=blue&style=flat-square)](#) ![Licença](https://img.shields.io/badge/license-GPL--3.0-green) [![GitHub stars](https://img.shields.io/github/stars/ServOps117/agenticSeek?style=social)](https://github.com/ServOps117/agenticSeek/stargazers)
 
-### Por que AgenticSeek?
+### Por que AI Stock Analyst?
 
 * 🔒 Totalmente Local & Privado - Tudo roda na sua máquina — sem nuvem, sem compartilhamento de dados. Seus arquivos, conversas e buscas permanecem privados.
 
-* 🌐 Navegação Inteligente na Web - O AgenticSeek pode navegar na internet sozinho — pesquisar, ler, extrair informações, preencher formulários — tudo sem as mãos.
+* 🌐 Navegação Inteligente na Web - O AI Stock Analyst pode navegar na internet sozinho — pesquisar, ler, extrair informações, preencher formulários — tudo sem as mãos.
 
 * 💻 Assistente Autônomo de Programação - Precisa de código? Ele pode escrever, depurar e executar programas em Python, C, Go, Java e mais — tudo sem supervisão.
 
@@ -26,7 +26,7 @@
 
 ### **Demo**
 
-> *Você pode pesquisar sobre o projeto agenticSeek, aprender quais habilidades são necessárias, depois abrir o CV_candidates.zip e então me dizer quais combinam melhor com o projeto?*
+> *Você pode pesquisar sobre o projeto AI Stock Analyst, aprender quais habilidades são necessárias, depois abrir o CV_candidates.zip e então me dizer quais combinam melhor com o projeto?*
 
 https://github.com/user-attachments/assets/b8ca60e9-7b3b-4533-840e-08f9ac426316
 
@@ -45,7 +45,7 @@ Para problemas relacionados ao chrome driver, veja a seção **Chromedriver**.
 ### 1. **Clone o repositório e configure**
 
 ```sh
-git clone https://github.com/Fosowl/agenticSeek.git
+git clone https://github.com/ServOps117/agenticSeek.git
 cd agenticSeek
 mv .env.example .env
 ```
@@ -75,7 +75,7 @@ Atualize o arquivo `.env` com seus próprios valores conforme necessário:
 
 - **SEARXNG_BASE_URL**: Deixe inalterado
 - **REDIS_BASE_URL**: Deixe inalterado
-- **WORK_DIR**: Caminho para seu diretório de trabalho local. O AgenticSeek poderá ler e interagir com esses arquivos.
+- **WORK_DIR**: Caminho para seu diretório de trabalho local. O AI Stock Analyst poderá ler e interagir com esses arquivos.
 - **OLLAMA_PORT**: Porta para o serviço Ollama.
 - **LM_STUDIO_PORT**: Porta para o serviço LM Studio.
 - **CUSTOM_ADDITIONAL_LLM_PORT**: Porta para qualquer serviço LLM adicional.
@@ -161,7 +161,7 @@ Não copie e cole a configuração de exemplo diretamente, pois comentários cau
 | lm-studio  | Sim    | Rode LLM localmente com LM studio (`provider_name` = `lm-studio`)|
 | openai     | Sim    | Use API compatível com openai (ex: servidor llama.cpp)  |
 
-Próximo passo: [Inicie os serviços e rode o AgenticSeek](#Start-services-and-Run)
+Próximo passo: [Inicie os serviços e rode o AI Stock Analyst](#Start-services-and-Run)
 
 *Veja a seção **Problemas conhecidos** se tiver problemas*
 
@@ -202,7 +202,7 @@ Exemplo: exportar `TOGETHER_API_KEY="xxxxx"`
 
 Observe que código/bash pode falhar com gemini, pois ignora nosso prompt de formatação, que é otimizado para deepseek r1. Modelos como gpt-4o também apresentam desempenho ruim com nosso prompt.
 
-Próximo passo: [Inicie os serviços e rode o AgenticSeek](#Start-services-and-Run)
+Próximo passo: [Inicie os serviços e rode o AI Stock Analyst](#Start-services-and-Run)
 
 *Veja a seção **Problemas conhecidos** se tiver problemas*
 
@@ -273,7 +273,7 @@ Exemplos de uso:
 
 *Observe que o preenchimento de formulários ainda é experimental e pode falhar.*
 
-Após digitar sua consulta, o AgenticSeek alocará o melhor agente para a tarefa.
+Após digitar sua consulta, o AI Stock Analyst alocará o melhor agente para a tarefa.
 
 Como este é um protótipo inicial, o sistema de roteamento de agentes pode não alocar sempre o agente certo para sua consulta.
 
@@ -303,7 +303,7 @@ Nota: Para Windows ou macOS, use ipconfig ou ifconfig para encontrar o IP.
 Clone o repositório e entre na pasta `server/`.
 
 ```sh
-git clone --depth 1 https://github.com/Fosowl/agenticSeek.git
+git clone --depth 1 https://github.com/ServOps117/agenticSeek.git
 cd agenticSeek/llm_server/
 ```
 
@@ -334,7 +334,7 @@ provider_model = deepseek-r1:70b
 provider_server_address = x.x.x.x:3333
 ```
 
-Próximo passo: [Inicie os serviços e rode o AgenticSeek](#Start-services-and-Run)
+Próximo passo: [Inicie os serviços e rode o AI Stock Analyst](#Start-services-and-Run)
 
 ---
 
@@ -518,19 +518,19 @@ Certifique-se de que o local está rodando (`ollama serve`), seu `config.ini` co
 
 Sim, com Ollama, lm-studio ou provedores server, todo o reconhecimento de fala, LLM e TTS rodam localmente. Opções não locais (OpenAI ou outras APIs) são opcionais.
 
-**P: Por que usar AgenticSeek se já tenho Manus?**
+**P: Por que usar AI Stock Analyst se já tenho Manus?**
 
 Começou como um projeto paralelo por interesse em agentes de IA. O diferencial é usar modelos locais e evitar APIs.
 Nos inspiramos em Jarvis e Friday (filmes do Homem de Ferro) para torná-lo "legal", mas funcionalmente nos inspiramos mais no Manus, pois é isso que as pessoas querem: uma alternativa local ao Manus.
-Ao contrário do Manus, o AgenticSeek prioriza independência de sistemas externos, dando mais controle, privacidade e evitando custos de API.
+Ao contrário do Manus, o AI Stock Analyst prioriza independência de sistemas externos, dando mais controle, privacidade e evitando custos de API.
 
 ## Contribua
 
-Procuramos desenvolvedores para melhorar o AgenticSeek! Veja as issues abertas ou discussões.
+Procuramos desenvolvedores para melhorar o AI Stock Analyst! Veja as issues abertas ou discussões.
 
 [Guia de contribuição](./docs/CONTRIBUTING.md)
 
-[![Star History Chart](https://api.star-history.com/svg?repos=Fosowl/agenticSeek&type=Date)](https://www.star-history.com/#Fosowl/agenticSeek&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=Fosowl/ai-stock-analyst&type=Date)](https://www.star-history.com/#Fosowl/ai-stock-analyst&Date)
 
 ## Mantenedores:
 

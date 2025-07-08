@@ -6,7 +6,7 @@
 - Docker or Orbstack or Podman.
 - Ollama with some deepseek-r1 variant installed or similar local reasoning model.
 - Basic familiarity with Python and AI models.
-- Join the discord (optional): https://discord.gg/8hGDaME3TC
+- Join our community (optional): Check project discussions for support
 
 ## Contribution Guidelines
 
@@ -96,7 +96,7 @@ Tools are extensions that enable agents to perform specific actions, such as run
 
 Agents invoke tools using a standardized format called a block. A block consists of the tool name followed by the content (e.g., code, query, or parameters) to execute. The format looks like this:
 
-BECAUSE WE USE MARKDOWN QUOTE FORMAT, READING WILL BE BROKEN ON GITHUB PLEASE START READING THE FILE AS RAW: https://raw.githubusercontent.com/Fosowl/agenticSeek/refs/heads/main/CONTRIBUTING.md
+BECAUSE WE USE MARKDOWN QUOTE FORMAT, READING WILL BE BROKEN ON GITHUB PLEASE START READING THE FILE AS RAW: https://raw.githubusercontent.com/ServOps117/ai-stock-analyst/refs/heads/main/CONTRIBUTING.md
 
 
 ```<tool name>

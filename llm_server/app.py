@@ -7,7 +7,7 @@ from flask import Flask, jsonify, request
 from sources.llamacpp_handler import LlamacppLLM
 from sources.ollama_handler import OllamaLLM
 
-parser = argparse.ArgumentParser(description='AgenticSeek server script')
+parser = argparse.ArgumentParser(description='AI Stock Analyst server script')
 parser.add_argument('--provider', type=str, help='LLM backend library to use. set to [ollama], [vllm] or [llamacpp]', required=True)
 parser.add_argument('--port', type=int, help='port to use', required=True)
 args = parser.parse_args()
