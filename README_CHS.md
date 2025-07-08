@@ -1,20 +1,20 @@
-# AgenticSeek：私有、本地的 Manus 替代方案
+# AI Stock Analyst：私有、本地的 Manus 替代方案
 
 <p align="center">
-<img align="center" src="./media/agentic_seek_logo.png" width="300" height="300" alt="Agentic Seek Logo">
+<img align="center" src="./media/ai_stock_analyst_logo.png" width="300" height="300" alt="AI Stock Analyst Logo">
 <p>
 
     [English](./README.md) | 中文 | [繁體中文](./README_CHT.md) | [Français](./README_FR.md) | [日本語](./README_JP.md) | [Português (Brasil)](./README_PTBR.md)
 
 *一个**100%本地运行的 Manus AI 替代品**，支持语音的 AI 助手，可自主浏览网页、编写代码、规划任务，所有数据仅保存在你的设备上。专为本地推理模型设计，完全在你的硬件上运行，确保隐私无忧，无需云端依赖。*
 
-[![访问 AgenticSeek](https://img.shields.io/static/v1?label=Website&message=AgenticSeek&color=blue&style=flat-square)](https://fosowl.github.io/agenticSeek.html) ![License](https://img.shields.io/badge/license-GPL--3.0-green) [![Discord](https://img.shields.io/badge/Discord-Join%20Us-7289DA?logo=discord&logoColor=white)](https://discord.gg/8hGDaME3TC) [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/fosowl.svg?style=social&label=Update%20%40Fosowl)](https://x.com/Martin993886460) [![GitHub stars](https://img.shields.io/github/stars/Fosowl/agenticSeek?style=social)](https://github.com/Fosowl/agenticSeek/stargazers)
+[![访问 AI Stock Analyst](https://img.shields.io/static/v1?label=Website&message=AI%20Stock%20Analyst&color=blue&style=flat-square)](#) ![License](https://img.shields.io/badge/license-GPL--3.0-green) [![GitHub stars](https://img.shields.io/github/stars/ServOps117/agenticSeek?style=social)](https://github.com/ServOps117/agenticSeek/stargazers)
 
-### 为什么选择 AgenticSeek？
+### 为什么选择 AI Stock Analyst？
 
 * 🔒 完全本地 & 私有 —— 所有内容都在你的电脑上运行，无云端、无数据共享。你的文件、对话和搜索都保持私密。
 
-* 🌐 智能网页浏览 —— AgenticSeek 可自主浏览互联网：搜索、阅读、提取信息、填写网页表单，全程免手动。
+* 🌐 智能网页浏览 —— AI Stock Analyst 可自主浏览互联网：搜索、阅读、提取信息、填写网页表单，全程免手动。
 
 * 💻 自动化编程助手 —— 需要代码？它能编写、调试并运行 Python、C、Go、Java 等程序，无需监督。
 
@@ -26,7 +26,7 @@
 
 ### **演示**
 
-> *你能搜索 agenticSeek 项目，了解需要哪些技能，然后打开 CV_candidates.zip 并告诉我哪些最匹配该项目吗？*
+> *你能搜索 AI Stock Analyst 项目，了解需要哪些技能，然后打开 CV_candidates.zip 并告诉我哪些最匹配该项目吗？*
 
 https://github.com/user-attachments/assets/b8ca60e9-7b3b-4533-840e-08f9ac426316
 
@@ -45,7 +45,7 @@ https://github.com/user-attachments/assets/b8ca60e9-7b3b-4533-840e-08f9ac426316
 ### 1. **克隆仓库并初始化**
 
 ```sh
-git clone https://github.com/Fosowl/agenticSeek.git
+git clone https://github.com/ServOps117/agenticSeek.git
 cd agenticSeek
 mv .env.example .env
 ```
@@ -75,7 +75,7 @@ ANTHROPIC_API_KEY='optional'
 
 - **SEARXNG_BASE_URL**：保持不变
 - **REDIS_BASE_URL**：保持不变
-- **WORK_DIR**：本地工作目录路径，AgenticSeek 可读取和操作这些文件
+- **WORK_DIR**：本地工作目录路径，AI Stock Analyst 可读取和操作这些文件
 - **OLLAMA_PORT**：Ollama 服务端口
 - **LM_STUDIO_PORT**：LM Studio 服务端口
 - **CUSTOM_ADDITIONAL_LLM_PORT**：自定义 LLM 服务端口
@@ -161,7 +161,7 @@ stealth_mode = True # 使用 undetected selenium 降低被检测概率
 | lm-studio | 是     | 使用 LM studio 本地运行 LLM（provider_name 设为 lm-studio）|
 | openai    | 是     | 使用 openai 兼容 API（如 llama.cpp server）        |
 
-下一步：[启动服务并运行 AgenticSeek](#Start-services-and-Run)  
+下一步：[启动服务并运行 AI Stock Analyst](#Start-services-and-Run)  
 
 *如遇问题见**已知问题**部分*
 
@@ -202,7 +202,7 @@ provider_server_address = 127.0.0.1:5000 # 无关紧要
 
 注意：使用 gemini 时代码/bash 可能失败，模型对格式提示不敏感，优化针对 deepseek r1。gpt-4o 在本项目 prompt 下表现也较差。
 
-下一步：[启动服务并运行 AgenticSeek](#Start-services-and-Run)
+下一步：[启动服务并运行 AI Stock Analyst](#Start-services-and-Run)
 
 *如遇问题见**已知问题**部分*
 
@@ -273,7 +273,7 @@ CLI 模式下可通过设置 `listen = True` 启用语音转文本。
 
 *表单填写功能仍为实验性，可能失败。*
 
-输入查询后，AgenticSeek 会自动分配最佳代理执行任务。
+输入查询后，AI Stock Analyst 会自动分配最佳代理执行任务。
 
 由于目前为早期原型，代理路由系统可能无法总是正确分配代理。
 
@@ -303,7 +303,7 @@ curl https://ipinfo.io/ip # 公网 IP
 克隆仓库并进入 `server/` 文件夹：
 
 ```sh
-git clone --depth 1 https://github.com/Fosowl/agenticSeek.git
+git clone --depth 1 https://github.com/ServOps117/agenticSeek.git
 cd agenticSeek/llm_server/
 ```
 
@@ -334,7 +334,7 @@ provider_model = deepseek-r1:70b
 provider_server_address = x.x.x.x:3333
 ```
 
-下一步：[启动服务并运行 AgenticSeek](#Start-services-and-Run)  
+下一步：[启动服务并运行 AI Stock Analyst](#Start-services-and-Run)  
 
 ---
 
@@ -518,19 +518,19 @@ Deepseek R1 在推理和工具调用方面表现优异。我们认为它非常�
 
 是的，使用 Ollama、lm-studio 或 server provider 时，语音、LLM、语音转文本均本地运行。非本地（OpenAI 等 API）为可选。
 
-**Q: 有 Manus 为什么还要用 AgenticSeek？**
+**Q: 有 Manus 为什么还要用 AI Stock Analyst？**
 
 本项目起初只是兴趣驱动的副业。特别之处在于主打本地模型，避免 API。
 灵感来自 Jarvis 和 Friday（钢铁侠），功能上更接近 Manus，因为大家最想要的是本地 manus 替代品。
-与 Manus 不同，AgenticSeek 更注重独立性、隐私和避免 API 成本。
+与 Manus 不同，AI Stock Analyst 更注重独立性、隐私和避免 API 成本。
 
 ## 贡献
 
-我们欢迎开发者改进 AgenticSeek！请查看 open issues 或讨论区。
+我们欢迎开发者改进 AI Stock Analyst！请查看 open issues 或讨论区。
 
 [贡献指南](./docs/CONTRIBUTING.md)
 
-[![Star History Chart](https://api.star-history.com/svg?repos=Fosowl/agenticSeek&type=Date)](https://www.star-history.com/#Fosowl/agenticSeek&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=Fosowl/ai-stock-analyst&type=Date)](https://www.star-history.com/#Fosowl/ai-stock-analyst&Date)
 
 ## 维护者：
 
