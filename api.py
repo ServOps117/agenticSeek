@@ -45,7 +45,7 @@ def is_running_in_docker():
 
 from celery import Celery
 
-api = FastAPI(title="AgenticSeek API", version="0.1.0")
+api = FastAPI(title="AI Stock Analyst API", version="0.1.0")
 celery_app = Celery("tasks", broker="redis://localhost:6379/0", backend="redis://localhost:6379/0")
 celery_app.conf.update(task_track_started=True)
 logger = Logger("backend.log")
@@ -287,9 +287,9 @@ async def process_query(request: QueryRequest):
 if __name__ == "__main__":
     # Print startup info
     if is_running_in_docker():
-        print("[AgenticSeek] Starting in Docker container...")
+        print("[AI Stock Analyst] Starting in Docker container...")
     else:
-        print("[AgenticSeek] Starting on host machine...")
+        print("[AI Stock Analyst] Starting on host machine...")
     
     envport = os.getenv("BACKEND_PORT")
     if envport:

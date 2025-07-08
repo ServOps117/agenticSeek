@@ -17,7 +17,7 @@ chrome_bundle/
 .screenshots/*.jpg
 conversations/
 agentic_env/*
-agentic_seek_env/*
+ai_stock_analyst_env/*
 .env
 */.env
 dsk/

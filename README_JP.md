@@ -1,20 +1,20 @@
-# AgenticSeek: プライベートでローカルな Manus の代替
+# AI Stock Analyst: プライベートでローカルな Manus の代替
 
 <p align="center">
-<img align="center" src="./media/agentic_seek_logo.png" width="300" height="300" alt="Agentic Seek Logo">
+<img align="center" src="./media/ai_stock_analyst_logo.png" width="300" height="300" alt="AI Stock Analyst Logo">
 <p>
 
     English | [中文](./README_CHS.md) | [繁體中文](./README_CHT.md) | [Français](./README_FR.md) | [日本語](./README_JP.md) | [Português (Brasil)](./README_PTBR.md)
 
 **100%ローカルで動作するManus AIの代替**となる音声対応AIアシスタントです。ウェブの自律的な閲覧、コードの作成、タスクの計画を行い、すべてのデータをあなたのデバイス上に保持します。ローカル推論モデル向けに最適化されており、完全なプライバシーとクラウド依存ゼロを実現します。
 
-[![Visit AgenticSeek](https://img.shields.io/static/v1?label=Website&message=AgenticSeek&color=blue&style=flat-square)](https://fosowl.github.io/agenticSeek.html) ![License](https://img.shields.io/badge/license-GPL--3.0-green) [![Discord](https://img.shields.io/badge/Discord-Join%20Us-7289DA?logo=discord&logoColor=white)](https://discord.gg/8hGDaME3TC) [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/fosowl.svg?style=social&label=Update%20%40Fosowl)](https://x.com/Martin993886460) [![GitHub stars](https://img.shields.io/github/stars/Fosowl/agenticSeek?style=social)](https://github.com/Fosowl/agenticSeek/stargazers)
+[![Visit AI Stock Analyst](https://img.shields.io/static/v1?label=Website&message=AI%20Stock%20Analyst&color=blue&style=flat-square)](#) ![License](https://img.shields.io/badge/license-GPL--3.0-green) [![GitHub stars](https://img.shields.io/github/stars/ServOps117/agenticSeek?style=social)](https://github.com/ServOps117/agenticSeek/stargazers)
 
-### なぜAgenticSeekなのか？
+### なぜAI Stock Analystなのか？
 
 * 🔒 完全ローカル＆プライベート - すべてがあなたのマシン上で動作。クラウドやデータ共有は一切なし。ファイル、会話、検索はすべてプライベートに保たれます。
 
-* 🌐 スマートなウェブブラウジング - AgenticSeekは自動でインターネットを検索・閲覧・情報抽出・フォーム入力までハンズフリーで実行します。
+* 🌐 スマートなウェブブラウジング - AI Stock Analystは自動でインターネットを検索・閲覧・情報抽出・フォーム入力までハンズフリーで実行します。
 
 * 💻 自律型コーディングアシスタント - コードが必要ですか？Python、C、Go、Javaなどのプログラムを自動で作成・デバッグ・実行します。
 
@@ -26,7 +26,7 @@
 
 ### **デモ**
 
-> *agenticSeekプロジェクトを検索し、必要なスキルを調べてからCV_candidates.zipを開き、プロジェクトに最も合う候補者を教えて*
+> *AI Stock Analystプロジェクトを検索し、必要なスキルを調べてからCV_candidates.zipを開き、プロジェクトに最も合う候補者を教えて*
 
 https://github.com/user-attachments/assets/b8ca60e9-7b3b-4533-840e-08f9ac426316
 
@@ -45,8 +45,8 @@ chrome driver関連の問題は**Chromedriver**セクションを参照してく
 ### 1. **リポジトリのクローンとセットアップ**
 
 ```sh
-git clone https://github.com/Fosowl/agenticSeek.git
-cd agenticSeek
+git clone https://github.com/ServOps117/ai-stock-analyst.git
+cd ai-stock-analyst
 mv .env.example .env
 ```
 
@@ -73,7 +73,7 @@ ANTHROPIC_API_KEY='optional'
 
 - **SEARXNG_BASE_URL**: 変更不要
 - **REDIS_BASE_URL**: 変更不要
-- **WORK_DIR**: ローカル作業ディレクトリのパス。AgenticSeekがこのディレクトリのファイルを読み書きします。
+- **WORK_DIR**: ローカル作業ディレクトリのパス。AI Stock Analystがこのディレクトリのファイルを読み書きします。
 - **OLLAMA_PORT**: Ollamaサービスのポート番号
 - **LM_STUDIO_PORT**: LM Studioサービスのポート番号
 - **CUSTOM_ADDITIONAL_LLM_PORT**: カスタムLLMサービスのポート番号
@@ -156,7 +156,7 @@ stealth_mode = True
 | lm-studio  | はい    | LM studioでローカルLLMを実行（`provider_name`は`lm-studio`）|
 | openai    | はい/いいえ | openai互換API（例: llama.cppサーバー）  |
 
-次のステップ: [サービスの起動とAgenticSeekの実行](#Start-services-and-Run)  
+次のステップ: [サービスの起動とAI Stock Analystの実行](#Start-services-and-Run)  
 
 *問題がある場合は**Known issues**セクション参照*
 
@@ -197,7 +197,7 @@ APIキーをエクスポート: `export <<PROVIDER>>_API_KEY="xxx"`
 
 geminiではコーディングやbashが失敗する場合があります。deepseek r1向けに最適化されたプロンプトを無視する傾向があります。gpt-4oも同様にプロンプトとの相性が悪い場合があります。
 
-次のステップ: [サービスの起動とAgenticSeekの実行](#Start-services-and-Run)
+次のステップ: [サービスの起動とAI Stock Analystの実行](#Start-services-and-Run)
 
 *問題がある場合は**Known issues**セクション参照*
 
@@ -205,7 +205,7 @@ geminiではコーディングやbashが失敗する場合があります。deep
 
 ---
 
-## サービスの起動とAgenticSeekの実行
+## サービスの起動とAI Stock Analystの実行
 
 必要なサービスを起動します。docker-compose.ymlから以下のサービスが起動します:
         - searxng
@@ -269,7 +269,7 @@ CLIモードで音声認識を使う場合はconfigで`listen = True`にして�
 *フォーム入力機能は実験的で失敗する場合があります。*
 
 
-クエリを入力すると、AgenticSeekが最適なエージェントを自動で割り当てます。
+クエリを入力すると、AI Stock Analystが最適なエージェントを自動で割り当てます。
 
 初期プロトタイプのため、エージェントの割り当てが最適でない場合があります。
 
@@ -301,7 +301,7 @@ WindowsやmacOSの場合はipconfigやifconfigで確認
 リポジトリをクローンし、`server/`フォルダへ
 
 ```sh
-git clone --depth 1 https://github.com/Fosowl/agenticSeek.git
+git clone --depth 1 https://github.com/ServOps117/agenticSeek.git
 cd agenticSeek/llm_server/
 ```
 
@@ -332,7 +332,7 @@ provider_model = deepseek-r1:70b
 provider_server_address = x.x.x.x:3333
 ```
 
-次のステップ: [サービスの起動とAgenticSeekの実行](#Start-services-and-Run)  
+次のステップ: [サービスの起動とAI Stock Analystの実行](#Start-services-and-Run)  
 
 ---
 
@@ -514,17 +514,17 @@ Deepseek R1は推論やツール利用に優れています。他モデルも使
 
 Ollama、lm-studio、serverプロバイダーなら音声認識・LLM・音声合成すべてローカルで動作します。API利用はオプションです。
 
-**Q: ManusがあるのにAgenticSeekを使う理由は？**
+**Q: ManusがあるのにAI Stock Analystを使う理由は？**
 
 このプロジェクトはローカルモデル利用とAPI回避を目的に始まりました。JarvisやFriday（アイアンマン）風の「かっこよさ」とManusの機能性を両立。Manusと違い外部依存を排除し、プライバシーとコスト削減を重視しています。
 
 ## コントリビュート
 
-AgenticSeekの改善にご協力ください！issueやディスカッションをチェック
+AI Stock Analystの改善にご協力ください！issueやディスカッションをチェック
 
 [コントリビューションガイド](./docs/CONTRIBUTING.md)
 
-[![Star History Chart](https://api.star-history.com/svg?repos=Fosowl/agenticSeek&type=Date)](https://www.star-history.com/#Fosowl/agenticSeek&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=ServOps117/agenticSeek&type=Date)](https://www.star-history.com/#ServOps117/agenticSeek&Date)
 
 ## メンテナー:
 

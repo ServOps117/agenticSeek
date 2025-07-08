@@ -1,16 +1,16 @@
-# AgenticSeek：私有、本地的 Manus 替代方案
+# AI Stock Analyst：私有、本地的 Manus 替代方案
 
 [English](./README.md) | 中文 | [繁體中文](./README_CHT.md) | [Français](./README_FR.md) | [日本語](./README_JP.md) | [Português (Brasil)](./README_PTBR.md)
 
 *一個**100%本地運行的 Manus AI 替代品**，支持語音的 AI 助手，可自主瀏覽網頁、編寫代碼、規劃任務，所有數據僅保存在你的設備上。專為本地推理模型設計，完全在你的硬件上運行，確保隱私無憂，無需雲端依賴。*
 
-[![訪問 AgenticSeek](https://img.shields.io/static/v1?label=Website&message=AgenticSeek&color=blue&style=flat-square)](https://fosowl.github.io/agenticSeek.html) ![License](https://img.shields.io/badge/license-GPL--3.0-green) [![Discord](https://img.shields.io/badge/Discord-Join%20Us-7289DA?logo=discord&logoColor=white)](https://discord.gg/8hGDaME3TC) [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/fosowl.svg?style=social&label=Update%20%40Fosowl)](https://x.com/Martin993886460) [![GitHub stars](https://img.shields.io/github/stars/Fosowl/agenticSeek?style=social)](https://github.com/Fosowl/agenticSeek/stargazers)
+[![訪問 AI Stock Analyst](https://img.shields.io/static/v1?label=Website&message=AI-Stock-Analyst&color=blue&style=flat-square)](#) ![License](https://img.shields.io/badge/license-GPL--3.0-green) [![GitHub stars](https://img.shields.io/github/stars/ServOps117/agenticSeek?style=social)](https://github.com/ServOps117/agenticSeek/stargazers)
 
-### 為什麼選擇 AgenticSeek？
+### 為什麼選擇 AI Stock Analyst？
 
 * 🔒 完全本地 & 私有 —— 所有內容都在你的電腦上運行，無雲端、無數據共享。你的文件、對話和搜索都保持私密。
 
-* 🌐 智能網頁瀏覽 —— AgenticSeek 可自主瀏覽互聯網：搜索、閱讀、提取信息、填寫網頁表單，全程免手動。
+* 🌐 智能網頁瀏覽 —— AI Stock Analyst 可自主瀏覽互聯網：搜索、閱讀、提取信息、填寫網頁表單，全程免手動。
 
 * 💻 自動化編程助手 —— 需要代碼？它能編寫、調試並運行 Python、C、Go、Java 等程序，無需監督。
 
@@ -22,7 +22,7 @@
 
 ### **演示**
 
-> *你能搜索 agenticSeek 項目，了解需要哪些技能，然後打開 CV_candidates.zip 並告訴我哪些最匹配該項目嗎？*
+> *你能搜索 ai-stock-analyst 項目，了解需要哪些技能，然後打開 CV_candidates.zip 並告訴我哪些最匹配該項目嗎？*
 
 https://github.com/user-attachments/assets/b8ca60e9-7b3b-4533-840e-08f9ac426316
 
@@ -41,7 +41,7 @@ https://github.com/user-attachments/assets/b8ca60e9-7b3b-4533-840e-08f9ac426316
 ### 1. **克隆倉庫並初始化**
 
 ```sh
-git clone https://github.com/Fosowl/agenticSeek.git
+git clone https://github.com/ServOps117/agenticSeek.git
 cd agenticSeek
 mv .env.example .env
 ```
@@ -71,7 +71,7 @@ ANTHROPIC_API_KEY='optional'
 
 - **SEARXNG_BASE_URL**：保持不變
 - **REDIS_BASE_URL**：保持不變
-- **WORK_DIR**：本地工作目錄路徑，AgenticSeek 可讀取和操作這些文件
+- **WORK_DIR**：本地工作目錄路徑，AI Stock Analyst 可讀取和操作這些文件
 - **OLLAMA_PORT**：Ollama 服務端口
 - **LM_STUDIO_PORT**：LM Studio 服務端口
 - **CUSTOM_ADDITIONAL_LLM_PORT**：自定義 LLM 服務端口
@@ -157,7 +157,7 @@ stealth_mode = True # 使用 undetected selenium 降低被檢測概率
 | lm-studio | 是 | 使用 LM studio 本地運行 LLM（provider_name 設為 lm-studio）|
 | openai | 是 | 使用 openai 兼容 API（如 llama.cpp server） |
 
-下一步：[啟動服務並運行 AgenticSeek](#Start-services-and-Run)
+下一步：[啟動服務並運行 AI Stock Analyst](#Start-services-and-Run)
 
 *如遇問題見**已知問題**部分*
 
@@ -198,7 +198,7 @@ provider_server_address = 127.0.0.1:5000 # 無關緊要
 
 注意：使用 gemini 時代碼/bash 可能失敗，模型對格式提示不敏感，優化針對 deepseek r1。gpt-4o 在本項目 prompt 下表現也較差。
 
-下一步：[啟動服務並運行 AgenticSeek](#Start-services-and-Run)
+下一步：[啟動服務並運行 AI Stock Analyst](#Start-services-and-Run)
 
 *如遇問題見**已知問題**部分*
 
@@ -269,7 +269,7 @@ CLI 模式下可通過設置 `listen = True` 啟用語音轉文本。
 
 *表單填寫功能仍為實驗性，可能失敗。*
 
-輸入查詢后，AgenticSeek 會自動分配最佳代理執行任務。
+輸入查詢后，AI Stock Analyst 會自動分配最佳代理執行任務。
 
 由於目前為早期原型，代理路由系統可能無法總是正確分配代理。
 
@@ -299,7 +299,7 @@ curl https://ipinfo.io/ip # 公網 IP
 克隆倉庫並進入 `server/` 文件夾：
 
 ```sh
-git clone --depth 1 https://github.com/Fosowl/agenticSeek.git
+git clone --depth 1 https://github.com/ServOps117/agenticSeek.git
 cd agenticSeek/llm_server/
 ```
 
@@ -330,7 +330,7 @@ provider_model = deepseek-r1:70b
 provider_server_address = x.x.x.x:3333
 ```
 
-下一步：[啟動服務並運行 AgenticSeek](#Start-services-and-Run)
+下一步：[啟動服務並運行 AI Stock Analyst](#Start-services-and-Run)
 
 ---
 
@@ -516,19 +516,19 @@ Deepseek R1 在推理和工具調用方面表現優異。我們認為它非常�
 
 是的，使用 Ollama、lm-studio 或 server provider 時，語音、LLM、語音轉文本均本地運行。非本地（OpenAI 等 API）為可選。
 
-**Q: 有 Manus 為什麼還要用 AgenticSeek？**
+**Q: 有 Manus 為什麼還要用 AI Stock Analyst？**
 
 本項目起初只是興趣驅動的副業。特別之處在於主打本地模型，避免 API。
 靈感來自 Jarvis 和 Friday（鋼鐵俠），功能上更接近 Manus，因為大家最想要的是本地 manus 替代品。
-與 Manus 不同，AgenticSeek 更注重獨立性、隱私和避免 API 成本。
+與 Manus 不同，AI Stock Analyst 更注重獨立性、隱私和避免 API 成本。
 
 ## 貢獻
 
-我們歡迎開發者改進 AgenticSeek！請查看 open issues 或討論區。
+我們歡迎開發者改進 AI Stock Analyst！請查看 open issues 或討論區。
 
 [貢獻指南](./docs/CONTRIBUTING.md)
 
-[![Star History Chart](https://api.star-history.com/svg?repos=Fosowl/agenticSeek&type=Date)](https://www.star-history.com/#Fosowl/agenticSeek&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=ServOps117/agenticSeek&type=Date)](https://www.star-history.com/#ServOps117/agenticSeek&Date)
 
 ## 維護者：
 
