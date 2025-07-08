@@ -42,7 +42,7 @@ https://github.com/user-attachments/assets/b8ca60e9-7b3b-4533-840e-08f9ac426316
 
 ```sh
 git clone https://github.com/ServOps117/agenticSeek.git
-cd ai-stock-analyst
+cd agenticSeek
 mv .env.example .env
 ```
 
@@ -269,7 +269,7 @@ CLI 模式下可通過設置 `listen = True` 啟用語音轉文本。
 
 *表單填寫功能仍為實驗性，可能失敗。*
 
-輸入查詢后，AgenticSeek 會自動分配最佳代理執行任務。
+輸入查詢后，AI Stock Analyst 會自動分配最佳代理執行任務。
 
 由於目前為早期原型，代理路由系統可能無法總是正確分配代理。
 
@@ -516,19 +516,19 @@ Deepseek R1 在推理和工具調用方面表現優異。我們認為它非常�
 
 是的，使用 Ollama、lm-studio 或 server provider 時，語音、LLM、語音轉文本均本地運行。非本地（OpenAI 等 API）為可選。
 
-**Q: 有 Manus 為什麼還要用 AgenticSeek？**
+**Q: 有 Manus 為什麼還要用 AI Stock Analyst？**
 
 本項目起初只是興趣驅動的副業。特別之處在於主打本地模型，避免 API。
 靈感來自 Jarvis 和 Friday（鋼鐵俠），功能上更接近 Manus，因為大家最想要的是本地 manus 替代品。
-與 Manus 不同，AgenticSeek 更注重獨立性、隱私和避免 API 成本。
+與 Manus 不同，AI Stock Analyst 更注重獨立性、隱私和避免 API 成本。
 
 ## 貢獻
 
-我們歡迎開發者改進 AgenticSeek！請查看 open issues 或討論區。
+我們歡迎開發者改進 AI Stock Analyst！請查看 open issues 或討論區。
 
 [貢獻指南](./docs/CONTRIBUTING.md)
 
-[![Star History Chart](https://api.star-history.com/svg?repos=Fosowl/agenticSeek&type=Date)](https://www.star-history.com/#Fosowl/agenticSeek&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=ServOps117/agenticSeek&type=Date)](https://www.star-history.com/#ServOps117/agenticSeek&Date)
 
 ## 維護者：
 

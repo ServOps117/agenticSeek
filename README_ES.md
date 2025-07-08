@@ -46,7 +46,7 @@ Para problemas relacionados con chrome driver, consulta la sección **Chromedriv
 
 ```sh
 git clone https://github.com/ServOps117/agenticSeek.git
-cd ai-stock-analyst
+cd agenticSeek
 mv .env.example .env
 ```
 
@@ -302,7 +302,7 @@ Clona el repositorio y entra en la carpeta `server/`.
 
 ```sh
 git clone --depth 1 https://github.com/ServOps117/agenticSeek.git
-cd ai-stock-analyst/llm_server/
+cd agenticSeek/llm_server/
 ```
 
 Instala los requisitos específicos del servidor:

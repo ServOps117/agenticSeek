@@ -156,7 +156,7 @@ stealth_mode = True
 | lm-studio  | はい    | LM studioでローカルLLMを実行（`provider_name`は`lm-studio`）|
 | openai    | はい/いいえ | openai互換API（例: llama.cppサーバー）  |
 
-次のステップ: [サービスの起動とAgenticSeekの実行](#Start-services-and-Run)  
+次のステップ: [サービスの起動とAI Stock Analystの実行](#Start-services-and-Run)  
 
 *問題がある場合は**Known issues**セクション参照*
 
@@ -197,7 +197,7 @@ APIキーをエクスポート: `export <<PROVIDER>>_API_KEY="xxx"`
 
 geminiではコーディングやbashが失敗する場合があります。deepseek r1向けに最適化されたプロンプトを無視する傾向があります。gpt-4oも同様にプロンプトとの相性が悪い場合があります。
 
-次のステップ: [サービスの起動とAgenticSeekの実行](#Start-services-and-Run)
+次のステップ: [サービスの起動とAI Stock Analystの実行](#Start-services-and-Run)
 
 *問題がある場合は**Known issues**セクション参照*
 
@@ -205,7 +205,7 @@ geminiではコーディングやbashが失敗する場合があります。deep
 
 ---
 
-## サービスの起動とAgenticSeekの実行
+## サービスの起動とAI Stock Analystの実行
 
 必要なサービスを起動します。docker-compose.ymlから以下のサービスが起動します:
         - searxng
@@ -269,7 +269,7 @@ CLIモードで音声認識を使う場合はconfigで`listen = True`にして�
 *フォーム入力機能は実験的で失敗する場合があります。*
 
 
-クエリを入力すると、AgenticSeekが最適なエージェントを自動で割り当てます。
+クエリを入力すると、AI Stock Analystが最適なエージェントを自動で割り当てます。
 
 初期プロトタイプのため、エージェントの割り当てが最適でない場合があります。
 
@@ -332,7 +332,7 @@ provider_model = deepseek-r1:70b
 provider_server_address = x.x.x.x:3333
 ```
 
-次のステップ: [サービスの起動とAgenticSeekの実行](#Start-services-and-Run)  
+次のステップ: [サービスの起動とAI Stock Analystの実行](#Start-services-and-Run)  
 
 ---
 
@@ -514,17 +514,17 @@ Deepseek R1は推論やツール利用に優れています。他モデルも使
 
 Ollama、lm-studio、serverプロバイダーなら音声認識・LLM・音声合成すべてローカルで動作します。API利用はオプションです。
 
-**Q: ManusがあるのにAgenticSeekを使う理由は？**
+**Q: ManusがあるのにAI Stock Analystを使う理由は？**
 
 このプロジェクトはローカルモデル利用とAPI回避を目的に始まりました。JarvisやFriday（アイアンマン）風の「かっこよさ」とManusの機能性を両立。Manusと違い外部依存を排除し、プライバシーとコスト削減を重視しています。
 
 ## コントリビュート
 
-AgenticSeekの改善にご協力ください！issueやディスカッションをチェック
+AI Stock Analystの改善にご協力ください！issueやディスカッションをチェック
 
 [コントリビューションガイド](./docs/CONTRIBUTING.md)
 
-[![Star History Chart](https://api.star-history.com/svg?repos=Fosowl/agenticSeek&type=Date)](https://www.star-history.com/#Fosowl/agenticSeek&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=ServOps117/agenticSeek&type=Date)](https://www.star-history.com/#ServOps117/agenticSeek&Date)
 
 ## メンテナー:
 
